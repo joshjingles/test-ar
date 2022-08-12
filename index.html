@@ -15,25 +15,26 @@
             <video id="videoId" src="assets/XPCloud_07.webm" muted autoplay loop="true"></video>
             <img id="texArt" src="assets/art1.jpg">            
         </a-assets>
-        
-<!--         <a-entity gltf-model="#frame"
+
+      <a-entity
+        material="shader: transparent-video; src: #videoId"
+        geometry="primitive: plane; width: 1; height: 1"
+        position="1 .9 .8">
+      </a-entity>
+      
+       <a-entity gltf-model="#frame"
                   position="0 1.5 -2"
                   scale=".01 .01 0.01"
                   >
         </a-entity>
- -->
+
         <a-entity gltf-model="#wacky"
                   position="4 0 -2"
                   scale=".01 .01 .01" 
                   animation-mixer="clip:animation_0"
                   >
         </a-entity>
-      
-      <a-entity
-        material="shader: transparent-video; src: #videoId"
-        geometry="primitive: plane; width: 1; height: 1"
-        position="1 .9 .8">
-      </a-entity>
+
 
 <!--         <a-sky color="#6EBAA7" transparent=true opacity="0.5"></a-sky> -->
         <a-plane src="#texArt" height="1.2" width="2.05" position="0 1.5 -1.98"></a-plane>-->
